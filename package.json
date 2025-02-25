@@ -1,0 +1,73 @@
+{
+    "name": "security-test-app",
+    "version": "1.0.0",
+    "description": "JavaScript application with hardcoded secrets for testing GitGuardian",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js",
+      "dev": "nodemon app.js",
+      "test": "jest"
+    },
+    "keywords": [
+      "security",
+      "testing",
+      "secrets",
+      "api-keys"
+    ],
+    "author": "Security Tester",
+    "license": "MIT",
+    "dependencies": {
+      "@azure/storage-blob": "^12.14.0",
+      "@google-cloud/storage": "^6.11.0",
+      "@sendgrid/mail": "^7.7.0",
+      "aws-sdk": "^2.1430.0",
+      "axios": "^1.4.0",
+      "bcrypt": "^5.1.0",
+      "body-parser": "^1.20.2",
+      "cors": "^2.8.5",
+      "dotenv": "^16.3.1",
+      "express": "^4.18.2",
+      "firebase-admin": "^11.10.1",
+      "helmet": "^7.0.0",
+      "jsonwebtoken": "^9.0.1",
+      "mongoose": "^7.4.3",
+      "morgan": "^1.10.0",
+      "nodemailer": "^6.9.4",
+      "twilio": "^4.14.1",
+      "winston": "^3.10.0"
+    },
+    "devDependencies": {
+      "jest": "^29.6.2",
+      "nodemon": "^3.0.1",
+      "supertest": "^6.3.3"
+    },
+    "engines": {
+      "node": ">=14.0.0"
+    },
+    "private": true,
+    "config": {
+      "commitizen": {
+        "path": "./node_modules/cz-conventional-changelog"
+      }
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/example/security-test-app.git"
+    },
+    "prettier": {
+      "singleQuote": true,
+      "trailingComma": "none",
+      "printWidth": 100
+    },
+    "npmToken": "npm_abcdefghijklmnopqrstuvwxyz0123456789",
+    "cloudinary": {
+      "cloud_name": "example-cloud",
+      "api_key": "123456789012345",
+      "api_secret": "abcdefghijklmnopqrstuvwxyz12"
+    },
+    "publishConfig": {
+      "registry": "https://registry.npmjs.org/",
+      "access": "restricted",
+      "_authToken": "npm_abcdefghijklmnopqrstuvwxyz0123456789"
+    }
+  }
